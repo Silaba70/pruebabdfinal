@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateCursos = async (id, cursos) => {
-        await fetch(`https://Silaba70.pythonanywhere.com/actualizar_cursos/${id}`, {
+        await fetch(`https://Silaba70.pythonanywhere.com/actualizar_cursos/${id}`), {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
