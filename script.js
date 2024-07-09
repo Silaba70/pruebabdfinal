@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${cursos.fecha}</td>
                 <td>${cursos.precio}</td>
                 <td>
-                    <button onclick="editCursos(${cursos.id}, '${cursos.nombre}', '${cursos.dictado_por}', ${cursos.fecha}, ${cursos.precio})">Editar</button>
+                    <button onclick="editCursos(${cursos.id}, '${cursos.nombre}', ${cursos.dictado_por}, ${cursos.fecha},${cursos.precio})">Editar</button>
                     <button onclick="deleteCursos(${cursos.id})">Eliminar</button>
                 </td>
             `;
@@ -76,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('cursosId').value = '';
     });
 
-    window.editCursos = (id, nombre, dictado_por, fecha, precio) => {
+    window.editCursos = (id, nombre, cantidad, precio) => {
         document.getElementById('cursosId').value = id;
         document.getElementById('nombre').value = nombre;
-        document.getElementById('dictado_por').value = dictado_por;
-        document.getElementById('fecha').value = fecha;
+        document.getElementById('cantidad').value = dictado_por;
+        document.getElementById('cantidad').value = fecha;
         document.getElementById('precio').value = precio;
         isUpdating = true;
     };
