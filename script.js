@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const deleteCursos = async (id) => {
         await fetch(`https://Silaba70.pythonanywhere.com/quitar_curso/${id}`, {
-            method: 'DELETE',
+            method: 'DELETE'
         });
         fetchCursos();
     };
