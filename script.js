@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateCursos = async (id, cursos) => {
         await fetch(`https://Silaba70.pythonanywhere.com/actualizar_cursos/${id}`, {
-            method: 'PUT'
+            method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const deleteCursos = async (id) => {
         await fetch(`https://Silaba70.pythonanywhere.com/quitar_curso/${id}`, {
-            method: 'DELETE'
+            method: 'DELETE',
         });
         fetchCursos();
     };
